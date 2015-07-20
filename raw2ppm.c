@@ -52,15 +52,14 @@ int main(int argc, char *argv[])
     iprc->params.user_mul[1] = 0.5;
     iprc->params.user_mul[2] = 1;
     iprc->params.user_mul[3] = 0.5;
-    iprc->params.use_camera_wb = 0;
-    iprc->params.use_camera_matrix = 0;
-    iprc->params.highlight = 2;
+    iprc->params.use_camera_wb = 1;
+    iprc->params.use_camera_matrix = 1;
+    iprc->params.highlight = 9;
     iprc->params.output_color = 0;
     iprc->params.output_bps = 16;
     iprc->params.user_qual = 1;
     iprc->params.four_color_rgb = 1;
     iprc->params.no_auto_bright = 1;
-    iprc->params.sony_arw2_hack = 1;
 
 
     int ret = libraw_open_buffer(iprc, buf, buf_size);
