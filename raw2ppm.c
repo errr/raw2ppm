@@ -9,7 +9,7 @@
 #define SWAP(a, b) { a ^= b; a ^= (b ^= a); }
 
 
-void libraw_error(ret)
+void libraw_error(int ret)
 {
     fprintf(stderr, "libraw  %s\n", libraw_strerror(ret));
 
